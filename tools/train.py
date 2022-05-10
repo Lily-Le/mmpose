@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+#%%
 import argparse
 import copy
 import os
@@ -81,12 +82,12 @@ def parse_args():
 
     return args
 
-
+#%%%
 def main():
     args = parse_args()
 
     cfg = Config.fromfile(args.config)
-
+    # cfg = Config.fromfile('configs/hand/2d_kpt_sview_rgb_img/topdown_heatmap/freihand2d/res18_freihand2d_224x224_ft.py')
     if args.cfg_options is not None:
         cfg.merge_from_dict(args.cfg_options)
 
@@ -100,7 +101,9 @@ def main():
     # work_dir is determined in this priority: CLI > segment in file > filename
     if args.work_dir is not None:
         # update configs according to CLI args if args.work_dir is not None
-        cfg.work_dir = args.work_dir
+        # cfg.work_dir = args.work_dir
+        cfg.work_dir=osp.join(args.work_dir,
+                                osp.splitext(osp.basename(args.config))[0])
     elif cfg.get('work_dir', None) is None:
         # use config filename as default work_dir if cfg.work_dir is None
         cfg.work_dir = osp.join('./work_dirs',
@@ -199,3 +202,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# %%

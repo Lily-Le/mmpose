@@ -8,6 +8,7 @@ log_config = dict(
     ])
 
 log_level = 'INFO'
+# load_from ='/home/zlc/cll/code/peclr_cbg/data/models_res18/hybrid2-frei-cgbg-correct/66e551fefbd14447ab967161e9af9c0c/port_model/epoch=29_st.pth'# None
 load_from = None
 resume_from = None
 dist_params = dict(backend='nccl')
