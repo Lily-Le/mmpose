@@ -173,24 +173,70 @@ import json
 
 
 #/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329/best_AUC_epoch_39.pth 
-paths={
-'ori44':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft/20220506_043806.log.json',
-'cgbg29c':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg/20220506_070750.log_c.json',
-'cgbg29c_freeze':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg_cor29_freez/20220507_205957.log.json',
+paths_all={
+##'ori44':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft/20220506_043806.log.json',
+
+##'cgbg29c':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg/20220506_070750.log_c.json',
+##'cgbg29c_freeze':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg_cor29_freez/20220507_205957.log.json',
 # 'cgbg14':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg/20220506_072244.log.json',
 # 'cgbg329c':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg_cor329/20220507_215836.log.json',
 'cgbg329c':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329/20220509_160331.log.json',
 # 'cgbg329c_freez':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg_cor329_freez/20220508_125516.log.json',
 'cgbg329c_freez':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329_freez/20220509_154605.log.json',
+'cgbg329c_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329_freez3/20220510_223258.log.json',
+
 'cgbg_ep104_freeze':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_ep104_freez/20220509_163627.log.json',
+'cgbg_ep104_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_ep104_freez3/20220510_222354.log.json',
+
 'ori299':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_ep299/20220507_235110.log.json',
 # 'ori299_freez':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_ep299_freez/20220509_154743.log.json',
 'ori299_freez':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_ep299_freez/20220508_151526.log.json',
+'ori299_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_ep299_freez3/20220511_172412.log.json',  
+
+'res50_cgbg29c_freeze':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze/20220510_041434.log.json',
+'res50_cgbg29c_freeze3':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze3/20220510_224157.log.json',
+'res50_cgbg29c_freeze2':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze2/20220512_133822.log.json',
+'res50_ori29_freeze2':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_ori29_freeze2/20220513_033054.log.json',
+
+
 'imgnet_pretrain_freeze':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_imgnet_freeze/20220510_201536.log.json',
 'no_pretrain_freeze':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_nopretrain/20220510_201648.log.json',
+}
+paths_freeze={
+    'cgbg329c_freez':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329_freez/20220509_154605.log.json',
+'cgbg_ep104_freeze':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_ep104_freez/20220509_163627.log.json',
+'ori299_freez':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_ep299_freez/20220508_151526.log.json',
 'res50_cgbg29c_freeze':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze/20220510_041434.log.json',
+'imgnet_pretrain_freeze':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_imgnet_freeze/20220510_201536.log.json',
+'no_pretrain_freeze':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_nopretrain/20220510_201648.log.json',
+# 'res50_cgbg29c_freeze3':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze3/20220510_224157.log.json',
+# 'res50_cgbg29c_freeze2':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze2/20220512_133822.log.json',
 }
 
+paths_freeze3={
+'cgbg329c_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329_freez3/20220510_223258.log.json',
+'cgbg_ep104_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_ep104_freez3/20220510_222354.log.json',
+'res50_cgbg29c_freeze3':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze3/20220510_224157.log.json',
+'ori299_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_ep299_freez3/20220511_172412.log.json',  
+# 'res50_cgbg29c_freeze2':'/workspace/cll/Exp_results/MMPose/res50_freihand2d_224x224_ft_cbg_cor29_freeze2/20220512_133822.log.json',
+}
+
+# keys_=list(paths_all.keys())
+
+paths={
+    'ori299':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_ep299/20220507_235110.log.json',
+# 'ori299_freez':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_ep299_freez/20220509_154743.log.json',
+'ori299_freez':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_ep299_freez/20220508_151526.log.json',
+'ori299_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_ep299_freez3/20220511_172412.log.json',  
+}
+
+paths={
+    'cgbg329c':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329/20220509_160331.log.json',
+# 'cgbg329c_freez':'/home/zlc/cll/code/mmpose/work_dirs/res18_freihand2d_224x224_ft_cgbg_cor329_freez/20220508_125516.log.json',
+'cgbg329c_freez':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329_freez/20220509_154605.log.json',
+'cgbg329c_freeze3':'/workspace/cll/Exp_results/MMPose/res18_freihand2d_224x224_ft_cgbg_cor329_freez3/20220510_223258.log.json',
+}
+paths=paths_all
 labels=paths.keys()
 accs=[]
 iter=[]
@@ -210,6 +256,7 @@ for n in paths:
 #%%
 import copy
 import pdb
+import os
 def dic_to_list(dic_list):
     keys=list(dic_list[0].keys()) #['mode', 'epoch', 'iter', 'lr', 'memory', 'data_time', 'heatmap_loss', 'acc_pose', 'loss', 'time']
     ep_keys=['AUC','EPE','PCK','epoch','iter','lr','mode']
@@ -229,10 +276,10 @@ def dic_to_list(dic_list):
                 ep_result[n].append(dic_list[d][n])
     return dic_result,ep_result
 
-def show_results(results,mode,ind):
+def show_results(results,mode,ind,save_path):
     import matplotlib.pyplot as plt
     fig=plt.figure(figsize=(10,10))
-    ax=fig.add_subplot(220+1)
+    ax=fig.add_subplot()
     i=0
     for n in results.keys():#_ep999_
         ax.plot(results[n][mode][ind],label=n)
@@ -245,20 +292,26 @@ def show_results(results,mode,ind):
     #plt.ylim([0.5, 1])
     ax.set_title(f'{ind} vs. {mode}')
     ax.legend(loc='lower right')
+    fig.savefig(save_path+f'{ind}_{mode}.png')
+
 
 # %%
 results=dict.fromkeys(labels)
 for n in results:
-    results[n]={'iter_result':None,'epoch_result':None}
-    results[n]['iter_result'],results[n]['epoch_result']=dic_to_list(results_all[n])
+    results[n]={'iter':None,'epoch':None}
+    results[n]['iter'],results[n]['epoch']=dic_to_list(results_all[n])
 
 # %%
 show_results(results,'epoch_result','AUC')
 
 # %%
 #['mode', 'epoch', 'iter', 'lr', 'memory', 'data_time', 'heatmap_loss', 'acc_pose', 'loss', 'time']
-show_results(results,'iter_result','acc_pose')
+fig_base='/home/zlc/cll/code/mmpose/fig_results/all_'
+show_results(results,'iter','acc_pose',fig_base)
 
 
+
+# %%
+show_results(results,'iter_result','loss')
 
 # %%
